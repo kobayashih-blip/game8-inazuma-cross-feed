@@ -2,8 +2,8 @@ name: Update RSS feed
 
 on:
   schedule:
-    # Re-register GitHub scheduler; avoid peak times at the start of each hour.
-    - cron: "17,47 * * * *"
+    # Run every 15 minutes, away from peak times at the start of each hour.
+    - cron: "3,18,33,48 * * * *"
   workflow_dispatch:
   push:
     branches: [main]
